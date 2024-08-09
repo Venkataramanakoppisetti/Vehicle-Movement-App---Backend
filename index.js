@@ -9,4 +9,8 @@ app.use(express.json());
 app.use('/api/vehicle', vehicleRoutes); // This should be a function, not a string
 
 const PORT = process.env.PORT || 5000;
-app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
+
+app.listen(PORT, () => {
+    console.log(`Server is running at ${PORT}`);
+    console.log('Backend is working fine...!!!')
+})
